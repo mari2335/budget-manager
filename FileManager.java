@@ -16,34 +16,26 @@ public class FileManager {
                 printWriter.println("Food:");
                 if (purchases.getPurchasesByType("Food") != null) {
                     purchases.getPurchasesByType("Food").forEach((name, price) -> printWriter.println(name + "##" + price));
-                    printWriter.println();
-                } else {
-                    printWriter.println();
-                }
+                } 
+                printWriter.println();
 
                 printWriter.println("Clothes:");
                 if (purchases.getPurchasesByType("Clothes") != null) {
                     purchases.getPurchasesByType("Clothes").forEach((name, price) -> printWriter.println(name + "##" + price));
-                    printWriter.println();
-                } else {
-                    printWriter.println();
                 }
+                printWriter.println();
 
                 printWriter.println("Entertainment:");
                 if (purchases.getPurchasesByType("Entertainment") != null) {
                     purchases.getPurchasesByType("Entertainment").forEach((name, price) -> printWriter.println(name + "##" + price));
-                    printWriter.println();
-                } else {
-                    printWriter.println();
-                }
+                } 
+                printWriter.println();
 
                 printWriter.println("Other:");
                 if (purchases.getPurchasesByType("Other") != null) {
                     purchases.getPurchasesByType("Other").forEach((name, price) -> printWriter.println(name + "##" + price));
-                    printWriter.println();
-                } else {
-                    printWriter.println();
-                }
+                } 
+                printWriter.println();
             }
         } catch (IOException e) {
             System.out.printf("An exception occurred %s", e.getMessage());
